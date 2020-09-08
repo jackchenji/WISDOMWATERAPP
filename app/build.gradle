@@ -18,7 +18,14 @@ android {
     }
     allprojects {
         repositories {
-            maven { url 'https://jitpack.io' }
+            maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+            maven { url 'https://dl.bintray.com/umsdk/release' }
+            //maven { url 'https://jitpack.io' }
+            maven { url 'https://dl.bintray.com/froadbintray/maven/' }
+            maven { url 'https://maven.google.com' }
+            //maven { url 'https://dl.google.com/dl/android/maven2' }
+            jcenter()
+            maven {url 'http://developer.huawei.com/repo/'}
         }
     }
 
@@ -27,6 +34,19 @@ android {
     }
 
 }
+
+buildscript {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        //maven { url 'https://jitpack.io' }
+        maven { url 'https://dl.bintray.com/froadbintray/maven/' }
+        maven { url 'https://maven.google.com' }
+        jcenter()
+    }
+}
+
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
