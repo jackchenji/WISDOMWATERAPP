@@ -14,4 +14,9 @@
     <string name="empty_view">这是一个空布局</string>
     <string name="load_data">加载数据</string>
     <string name="title_activity_web">标题浏览器</string>
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
